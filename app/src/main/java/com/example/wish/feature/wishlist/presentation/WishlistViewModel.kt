@@ -1,8 +1,8 @@
-package com.example.wish.feature.Wishlist.presentation
+package com.example.wish.feature.wishlist.presentation
 
 import androidx.lifecycle.ViewModel
-import com.example.wish.feature.Wishlist.domain.model.Product
-import com.example.wish.feature.Wishlist.domain.model.WishlistUiState
+import com.example.wish.feature.wishlist.domain.model.Product
+import com.example.wish.feature.wishlist.domain.model.WishlistUiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

@@ -1,4 +1,4 @@
-package com.example.wish.feature.Wishlist.domain.model
+package com.example.wish.feature.wishlist.domain.model
 
 data class WishlistUiState(
     val products: List<Product> = emptyList()
