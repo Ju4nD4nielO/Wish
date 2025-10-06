@@ -9,7 +9,6 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun LikeCounterScreen() {
-    // Estado local: se pierde al rotar porque vive dentro del Composable
     var likeCount by remember { mutableStateOf(0) }
 
     Scaffold { padding ->

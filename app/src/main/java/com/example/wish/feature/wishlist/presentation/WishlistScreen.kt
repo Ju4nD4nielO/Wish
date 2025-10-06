@@ -11,14 +11,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.wish.feature.wishlist.presentation.components.ProductItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun WishlistScreen(
     onNavigateToProfile: () -> Unit,
-    viewModel: WishlistViewModel = viewModel()
+    viewModel: WishlistViewModel
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
@@ -50,7 +49,6 @@ fun WishlistScreen(
                 .fillMaxSize()
                 .padding(padding)
         ) {
-            // Contador de favoritos
             Surface(
                 modifier = Modifier.fillMaxWidth(),
                 color = MaterialTheme.colorScheme.secondaryContainer
@@ -62,7 +60,6 @@ fun WishlistScreen(
                 )
             }
 
-            // Lista de productos
             LazyColumn(
                 modifier = Modifier.fillMaxSize(),
                 contentPadding = PaddingValues(16.dp),
